@@ -16,6 +16,7 @@ const StyledTitle = styled.h4`
 `;
 
 const StyledHeadLine = styled.h2`
+  margin-top: 16px;
   color: #1c1c1c;
   font-family: Arial;
   font-size: 24px;
@@ -25,12 +26,17 @@ const StyledHeadLine = styled.h2`
 `;
 
 const StyledContent = styled.div`
+  margin-top: 16px;
   color: #1c1c1c;
   font-family: Arial;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 27px;
+  & p,
+  ul {
+    margin-top: 16px;
+  }
 `;
 
 const StyledButton = styled.button`
@@ -44,6 +50,7 @@ const StyledButton = styled.button`
   text-transform: uppercase;
   padding: 16px 32px;
   border: 0px;
+  margin-top: 16px;
 `;
 
 const Article = ({
@@ -65,4 +72,9 @@ const Article = ({
   );
 };
 
-export default Article;
+const StyledArticle = styled(Article)`
+  margin-top: 40px;
+  margin-bottom: 40px;
+`;
+
+export default StyledArticle;
